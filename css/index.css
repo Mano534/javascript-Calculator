@@ -1,0 +1,119 @@
+body{
+    box-sizing: border-box;
+    padding: 0px;
+    margin: 0px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    overflow-x: hidden;
+}
+header{
+    width: 60%;
+    margin: 20px auto;
+    text-align: center;
+}
+#OFF{
+    border-radius: 50%;
+    background-color: #f00;
+    color : white ;
+    padding : 2px ; 
+    transition: .2s;
+}
+.power{
+    color : #f00!important;
+    background-color: white!important;
+}
+.caculator{
+    padding : 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    overflow: auto;
+    margin: 0px auto;
+    width: 70%;
+    background-color: #DDD;
+}
+ output{
+    width: 80%;
+    background-color: moccasin;
+    padding: 5px;
+    min-height: 150px;
+    display: block;
+    margin: 0px auto;
+    border: 1px solid #ddd ;
+    border-radius: 7px;
+    text-align: right;
+    word-wrap: break-word;
+
+}
+
+.input{
+    font-size: 1.5rem;
+    margin : 10px 0px;
+    min-height: 50%;
+
+}
+.result{
+    margin : 10px 0px;
+    font-size: 2.0rem;
+    min-height: 50%;
+
+}
+.grid{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 10px;
+    width: 80% ; 
+    margin: 10px auto;
+}
+.AC{
+    grid-column: 1/3;
+}
+.equals{
+    grid-column: 2/4;
+}
+button{
+    padding : 10px;
+    font-size: 1.5rem;
+    background-color : rgb(0, 76, 255);
+    border:  none;
+    transition: 0.3s;
+    border-radius: 5px;
+    color: #fff ; 
+
+    box-shadow: 0px 3px 10px 0px rgb(77, 198, 255)  ;
+}
+button:active{
+    box-shadow: none;
+}
+button:hover{
+    cursor: pointer;
+}
+footer{
+    position: absolute;
+    bottom : 0;
+    left: 0;
+    width: 100%;
+    background-color: #AAA;
+    color: #fff;
+padding-left: 100px;
+font-size: 2rem;
+
+}
+footer p {
+    margin: 0px;
+}
+@media (min-width: 800px){
+    .caculator{
+        width: 40%;
+    }
+    footer{
+        font-size: 1.5rem;
+    }
+}
+@media (max-width : 500px){
+    .caculator{
+        width: 80%;
+    }
+    footer{
+        font-size: 1.2rem;
+    }
+}
+
